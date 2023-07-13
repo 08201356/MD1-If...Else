@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Practice</title>
 </head>
 <body>
-$END$
+<script>
+  let username = prompt("Who's there?");
+  if (username == 'Admin'){
+      let Password = prompt('And the Password?');
+      if ( Password == 'TheMaster') {
+          document.write('Welcome');
+      } else if (Password == 'null') {
+          document.write('Canceled');
+      } else {
+          document.write('Wrong Password');
+      }
+  } else if (username == 'null'){
+      document.write('Canceled');
+  } else {
+      document.write('Who are you again?')
+  }
+</script>
 </body>
 </html>
